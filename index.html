@@ -145,6 +145,12 @@
         values we can see that UMAP clusters out these two groups, and preserves the QAPF relationships within each group.
         This shows that UMAP can also preserve categorical relationships in addition to numerical relationships.
     </p>
+
+    <p>
+        Since the QAPF data with intrusive/extrusive has more data influence for the 4 QAPF dimensions, and only 1 categorical dimension,
+        with lower n_neighbors we can see that the single categorical dimension has less influence on the UMAP projection.
+        This is best explained in Figure 3 on the original <a href="https://pair-code.github.io/understanding-umap/">UMAP article</a>.
+    </p>
     <div class="plot-row">
         <div class="plot-column">
             <div id="qap_plot_intext" class="plot"></div>
