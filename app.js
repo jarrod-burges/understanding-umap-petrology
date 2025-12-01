@@ -67,12 +67,30 @@ const pair1 = new PlotPair({
     }
 });
 
-const sp = new SinglePlot({
+const qap_plot_intext = new SinglePlot({
     elementId: "qap_plot_intext",
     json: "precomputed_umap_qap_intext.json",
     coordsKey: "embedding",
     colorKey: "rocktype",
     title: "QAP UMAP With Intrusive and Extrusive Rocks",
+    isUMAP: true
+});
+
+const metamorphic_plot = new SinglePlot({
+    elementId: "metamorphic_binary_plot",
+    json: "metamorphic_binary_umap.json",
+    coordsKey: "embedding",
+    colorKey: "rocktype",
+    title: "Metamorphic - Mineral Assemblage UMAP Projection",
+    isUMAP: true
+});
+
+const metamorphic_comp_plot = new SinglePlot({
+    elementId: "metamorphic_comp_plot",
+    json: "metamorphic_comp_umap.json",
+    coordsKey: "embedding",
+    colorKey: "rocktype",
+    title: "Metamorphic - Mineral Assemblage With Percentages UMAP Projection",
     isUMAP: true
 });
 
@@ -92,5 +110,7 @@ const sp = new SinglePlot({
     });
 
     await pair1.load();
-    await sp.load();
+    await qap_plot_intext.load();
+    await metamorphic_plot.load();
+    await metamorphic_comp_plot.load();
 })();

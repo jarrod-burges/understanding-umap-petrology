@@ -146,10 +146,43 @@
         </div>
     </div>
 
+    <h3>UMAP with Metamorphic Mineral Assemblages</h3>
+    <p>
+        Here we explore UMAP using metamorphic mineral assemblage data.
+        Metamorphic rocks are classified based on their mineral assemblages, which are influenced by the pressure and temperature conditions during metamorphism.
+        We use the presence or absence of key index minerals (e.g., garnet, staurolite, kyanite, sillimanite) as categorical variables in UMAP.
+    </p>
+
+    <p>
+        With the mineral assemblage data and hovering over points, we can see that specific clusters occur based on the mineralogy.
+        Where two clusters have two different colors(rock type), they represent the underlying continuous nature of metamorphic conditions.
+        As this
+    </p>
+
+    <div class="plot-row">
+        <div class="plot-column">
+            <div id="metamorphic_binary_plot" class="plot"></div>
+        </div>
+    </div>
+
+    <h3>UMAP with Metamorphic Percentage Mineral Assemblages</h3>
+    <p>
+        Here we explore UMAP using metamorphic mineral assemblage data with percentage compositions.
+        Instead of just presence/absence of key index minerals, we use the percentage of each mineral in the rock as numerical variables in UMAP.
+        This allows us to see how UMAP handles continuous compositional data and how it preserves relationships between samples with similar mineral percentages.
+        With certain parameters we can observe the expected gradational relationships between mineral assemblages, reflecting metamorphic facies series.
+    </p>
+
+    <div class="plot-row">
+        <div class="plot-column">
+            <div id="metamorphic_comp_plot" class="plot"></div>
+        </div>
+    </div>
+
     <h4>Acknowledgements</h4>
     <p>
         Thanks to the original <a href="https://pair-code.github.io/understanding-umap/">UMAP article authors</a> for their excellent work and explanations.
-        You can find the original code for this article on <a href="http://www.github.com/jarrodburges/understanding-umap-petrology">GitHub</a>.
+        You can find the original code for this article on <a href="http://www.github.com/jarrod-burges/understanding-umap-petrology">GitHub</a>.
         You can view my website at <a href="http://www.jarrodburges.com">jarrodburges.com</a>.
     </p>
 
